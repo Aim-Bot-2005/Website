@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Techinnovate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>Techinnovate</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="events.html" class="nav-link active">Events</a>
+                <a href="robotics-lab.html" class="nav-link">Robotics Lab</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="notice.html" class="nav-link">Notice</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Events Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title">Our Events</h1>
+                <p class="page-subtitle">Discover the latest robotics competitions, workshops, and tech events</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Filter -->
+    <section class="events-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="competition">Competitions</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+                <button class="filter-btn" data-filter="seminar">Seminars</button>
+                <button class="filter-btn" data-filter="exhibition">Exhibitions</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Grid -->
+    <section class="events-section">
+        <div class="container">
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card" data-category="competition">
+                    <div class="event-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>RoboWar Competition</span>
+                        </div>
+                        <div class="event-badge">Competition</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 15, 2024</span>
+                        </div>
+                        <h3 class="event-title">RoboWar Championship</h3>
+                        <p class="event-description">
+                            Battle of the bots! Join our annual robotics combat competition where teams design and build fighting robots.
+                        </p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Main Auditorium</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-users"></i>
+                                <span>50+ Participants</span>
+                            </div>
+                        </div>
+                        <a href="event-detail.html?id=1" class="event-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card" data-category="workshop">
+                    <div class="event-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>AI Workshop</span>
+                        </div>
+                        <div class="event-badge">Workshop</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 22, 2024</span>
+                        </div>
+                        <h3 class="event-title">AI & Machine Learning Workshop</h3>
+                        <p class="event-description">
+                            Learn the fundamentals of artificial intelligence and machine learning with hands-on projects.
+                        </p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Computer Lab 1</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-users"></i>
+                                <span>30 Participants</span>
+                            </div>
+                        </div>
+                        <a href="event-detail.html?id=2" class="event-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card" data-category="seminar">
+                    <div class="event-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Tech Seminar</span>
+                        </div>
+                        <div class="event-badge">Seminar</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 28, 2024</span>
+                        </div>
+                        <h3 class="event-title">Future of Robotics Technology</h3>
+                        <p class="event-description">
+                            Industry experts discuss the latest trends and future prospects in robotics and automation.
+                        </p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Conference Hall</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-users"></i>
+                                <span>200+ Attendees</span>
+                            </div>
+                        </div>
+                        <a href="event-detail.html?id=3" class="event-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="event-card" data-category="exhibition">
+                    <div class="event-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Tech Exhibition</span>
+                        </div>
+                        <div class="event-badge">Exhibition</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>April 5, 2024</span>
+                        </div>
+                        <h3 class="event-title">Innovation Showcase</h3>
+                        <p class="event-description">
+                            Display your innovative projects and prototypes to the community and industry professionals.
+                        </p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Exhibition Hall</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-users"></i>
+                                <span>100+ Projects</span>
+                            </div>
+                        </div>
+                        <a href="event-detail.html?id=4" class="event-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="event-card" data-category="workshop">
+                    <div class="event-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Drone Workshop</span>
+                        </div>
+                        <div class="event-badge">Workshop</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>April 12, 2024</span>
+                        </div>
+                        <h3 class="event-title">Drone Building & Programming</h3>
+                        <p class="event-description">
+                            Build and program your own drone from scratch. Learn about flight dynamics and autonomous navigation.
+                        </p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Robotics Lab</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-users"></i>
+                                <span>25 Participants</span>
+                            </div>
+                        </div>
+                        <a href="event-detail.html?id=5" class="event-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="event-card" data-category="competition">
+                    <div class="event-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Hackathon</span>
+                        </div>
+                        <div class="event-badge">Competition</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>April 20, 2024</span>
+                        </div>
+                        <h3 class="event-title">Robotics Hackathon</h3>
+                        <p class="event-description">
+                            48-hour coding marathon to build innovative robotics solutions for real-world problems.
+                        </p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Computer Labs</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-users"></i>
+                                <span>15 Teams</span>
+                            </div>
+                        </div>
+                        <a href="event-detail.html?id=6" class="event-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-robot"></i>
+                        <span>Techinnovate</span>
+                    </div>
+                    <p>Pioneering the future of robotics and technology education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="robotics-lab.html">Robotics Lab</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Techinnovate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

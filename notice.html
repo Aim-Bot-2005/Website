@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Board - Techinnovate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>Techinnovate</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="robotics-lab.html" class="nav-link">Robotics Lab</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="notice.html" class="nav-link active">Notice</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notice Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title">Notice Board</h1>
+                <p class="page-subtitle">Stay updated with the latest announcements and important information</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notice Filter -->
+    <section class="notice-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Notices</button>
+                <button class="filter-btn" data-filter="urgent">Urgent</button>
+                <button class="filter-btn" data-filter="event">Events</button>
+                <button class="filter-btn" data-filter="lab">Lab</button>
+                <button class="filter-btn" data-filter="general">General</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notices Section -->
+    <section class="notices-section">
+        <div class="container">
+            <div class="notices-grid">
+                <!-- Urgent Notice -->
+                <div class="notice-card urgent" data-category="urgent">
+                    <div class="notice-header">
+                        <div class="notice-badge urgent">Urgent</div>
+                        <div class="notice-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 15, 2024</span>
+                        </div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Lab Maintenance - Temporary Closure</h3>
+                        <p>
+                            The robotics laboratory will be temporarily closed from March 18-20, 2024 for 
+                            scheduled maintenance and equipment upgrades. All ongoing projects should be 
+                            completed or safely stored before the closure.
+                        </p>
+                        <div class="notice-details">
+                            <div class="notice-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>March 18-20, 2024</span>
+                            </div>
+                            <div class="notice-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Robotics Laboratory</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Notice -->
+                <div class="notice-card" data-category="event">
+                    <div class="notice-header">
+                        <div class="notice-badge event">Event</div>
+                        <div class="notice-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 12, 2024</span>
+                        </div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>RoboWar Championship Registration Open</h3>
+                        <p>
+                            Registration for the annual RoboWar Championship is now open! Teams of 2-4 members 
+                            can register until March 25, 2024. Competition will be held on April 5, 2024.
+                        </p>
+                        <div class="notice-details">
+                            <div class="notice-detail">
+                                <i class="fas fa-users"></i>
+                                <span>Team Registration</span>
+                            </div>
+                            <div class="notice-detail">
+                                <i class="fas fa-trophy"></i>
+                                <span>Prizes: ₹50,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lab Notice -->
+                <div class="notice-card" data-category="lab">
+                    <div class="notice-header">
+                        <div class="notice-badge lab">Lab</div>
+                        <div class="notice-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 10, 2024</span>
+                        </div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>New Equipment Available</h3>
+                        <p>
+                            We've added new 3D printers and advanced sensor kits to our laboratory. 
+                            Members can now access these resources for their projects. Training sessions 
+                            will be conducted next week.
+                        </p>
+                        <div class="notice-details">
+                            <div class="notice-detail">
+                                <i class="fas fa-microchip"></i>
+                                <span>New Equipment</span>
+                            </div>
+                            <div class="notice-detail">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Training Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General Notice -->
+                <div class="notice-card" data-category="general">
+                    <div class="notice-header">
+                        <div class="notice-badge general">General</div>
+                        <div class="notice-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 8, 2024</span>
+                        </div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Society Meeting - Monthly Review</h3>
+                        <p>
+                            Monthly society meeting scheduled for March 20, 2024 at 6:00 PM in the 
+                            main auditorium. All members are encouraged to attend for project updates 
+                            and upcoming event discussions.
+                        </p>
+                        <div class="notice-details">
+                            <div class="notice-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>6:00 PM</span>
+                            </div>
+                            <div class="notice-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Main Auditorium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Notice -->
+                <div class="notice-card" data-category="event">
+                    <div class="notice-header">
+                        <div class="notice-badge event">Event</div>
+                        <div class="notice-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 5, 2024</span>
+                        </div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>AI Workshop - Limited Seats</h3>
+                        <p>
+                            Only 10 seats remaining for the AI & Machine Learning workshop on March 22, 2024. 
+                            Register quickly to secure your spot. Workshop includes hands-on projects and 
+                            certification.
+                        </p>
+                        <div class="notice-details">
+                            <div class="notice-detail">
+                                <i class="fas fa-users"></i>
+                                <span>10 Seats Left</span>
+                            </div>
+                            <div class="notice-detail">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certification</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lab Notice -->
+                <div class="notice-card" data-category="lab">
+                    <div class="notice-header">
+                        <div class="notice-badge lab">Lab</div>
+                        <div class="notice-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 3, 2024</span>
+                        </div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Lab Safety Guidelines Update</h3>
+                        <p>
+                            Updated safety guidelines have been posted in the laboratory. All members 
+                            must review and follow the new protocols. Safety training session will be 
+                            conducted on March 15, 2024.
+                        </p>
+                        <div class="notice-details">
+                            <div class="notice-detail">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Safety Update</span>
+                            </div>
+                            <div class="notice-detail">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Training Required</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General Notice -->
+                <div class="notice-card" data-category="general">
+                    <div class="notice-header">
+                        <div class="notice-badge general">General</div>
+                        <div class="notice-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 1, 2024</span>
+                        </div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>New Member Orientation</h3>
+                        <p>
+                            Welcome to all new members who joined this semester! Orientation session 
+                            will be held on March 18, 2024 at 5:00 PM. Learn about society activities, 
+                            lab access, and meet your fellow members.
+                        </p>
+                        <div class="notice-details">
+                            <div class="notice-detail">
+                                <i class="fas fa-user-plus"></i>
+                                <span>New Members</span>
+                            </div>
+                            <div class="notice-detail">
+                                <i class="fas fa-handshake"></i>
+                                <span>Orientation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Notice -->
+                <div class="notice-card" data-category="event">
+                    <div class="notice-header">
+                        <div class="notice-badge event">Event</div>
+                        <div class="notice-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>February 28, 2024</span>
+                        </div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Innovation Showcase - Call for Projects</h3>
+                        <p>
+                            Submit your innovative robotics projects for the annual Innovation Showcase 
+                            on April 5, 2024. Deadline for project submission is March 30, 2024. 
+                            Winners will receive recognition and prizes.
+                        </p>
+                        <div class="notice-details">
+                            <div class="notice-detail">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Project Submission</span>
+                            </div>
+                            <div class="notice-detail">
+                                <i class="fas fa-trophy"></i>
+                                <span>Prizes Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-robot"></i>
+                        <span>Techinnovate</span>
+                    </div>
+                    <p>Pioneering the future of robotics and technology education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="robotics-lab.html">Robotics Lab</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Techinnovate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
